@@ -1,0 +1,15 @@
+# The menu, in order. "url" is the page file name ending in .html
+# "two_line: true" shows the label smaller, wrapped over two lines.
+- title: "What's New?!"
+  url: index.html
+- title: "Research"
+  url: research.html
+- title: "Projects"
+  url: projects.html
+- title: "Activities"
+  url: activities.html
+- title: "CV"
+  url: cv.html
+- title: "Evidence I've a Life"
+  url: not-physics.html
+  two_line: true

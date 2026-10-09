@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% comment %}
+  Turns a Markdown page into the boxed layout:
+  - text before the first "## heading" goes in the big title block
+  - every "## heading" starts a new box
+{% endcomment %}
+{% assign parts = content | split: "<h2" %}
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									{% if page.label %}<span class="date">{{ page.label | escape }}</span>{% endif %}
+									<h2>{{ page.heading | default: page.title | escape }}</h2>
+									{{ parts[0] }}
+								</header>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+{% for part in parts offset: 1 %}{% assign bits = part | split: "</h2>" %}
+								<article>
+									<header>
+										<h2{{ bits[0] }}</h2>
+									</header>
+									{{ bits[1] }}
+								</article>
+{% endfor %}
+							</section>

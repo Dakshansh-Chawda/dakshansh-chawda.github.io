@@ -96,3 +96,9 @@
 	}
 
 	@include color-list;
+/* Lists inside the centred boxes: no bullets hanging at the left edge */
+
+	.posts > article ul:not(.actions) {
+		list-style: none;
+		padding-left: 0;
+	}

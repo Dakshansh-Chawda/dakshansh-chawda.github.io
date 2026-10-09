@@ -132,3 +132,12 @@
 	}
 
 	@include color-button;
+/* Buttons written in Markdown: centre them and space them apart */
+
+	.posts > article p:has(> a.button) {
+		text-align: center;
+	}
+
+	.posts > article p > a.button + a.button {
+		margin-left: 1rem;
+	}

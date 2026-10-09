@@ -15,8 +15,7 @@
 			'opacity 1s ease'
 		));
 		background: rgba(255,255,255,0.175);
-		height: auto;
-		min-height: 4rem;
+		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
@@ -31,7 +30,6 @@
 				@include vendor('display', 'flex');
 				@include vendor('flex-grow', '1');
 				@include vendor('flex-shrink', '1');
-				@include vendor('flex-wrap', 'wrap');
 				font-family: _font(family-heading);
 				font-weight: _font(weight-heading);
 				letter-spacing: 0.075em;
@@ -59,6 +57,18 @@
 							color: inherit !important;
 							background-color: transparentize(_palette(invert, fg), 0.9);
 						}
+					}
+
+					&.two-line a {
+						@include vendor('display', 'flex');
+						@include vendor('align-items', 'center');
+						height: 4rem;
+						max-width: 9.5rem;
+						font-size: 0.65rem;
+						line-height: 1.35;
+						text-align: center;
+						white-space: normal;
+						border-bottom: 0;
 					}
 
 					&.active {

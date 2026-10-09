@@ -4687,20 +4687,39 @@ input, select, textarea {
 		}
 
 	}
-/* Nav: let the menu wrap onto a second row instead of clipping labels */
-
-	#nav {
-		height: auto;
-		min-height: 4rem;
-	}
-
-	#nav ul.links {
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-	}
+/* Nav: a menu item marked two_line is smaller and wraps over two lines */
 
 	#nav ul.links li a {
 		white-space: nowrap;
+	}
+
+	#nav ul.links li.two-line a {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		height: 4rem;
+		max-width: 9.5rem;
+		font-size: 0.65rem;
+		line-height: 1.35;
+		text-align: center;
+		white-space: normal;
+		border-bottom: 0;
+	}
+
+/* Buttons written in Markdown: centre them and space them apart */
+
+	.posts > article p:has(> a.button) {
+		text-align: center;
+	}
+
+	.posts > article p > a.button + a.button {
+		margin-left: 1rem;
+	}
+
+/* Lists inside the centred boxes: no bullets hanging at the left edge */
+
+	.posts > article ul:not(.actions) {
+		list-style: none;
+		padding-left: 0;
 	}
