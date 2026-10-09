@@ -1,0 +1,21 @@
+# Icons on the right of the menu. Icon names come from Font Awesome 5.
+- title: InspireHEP
+  url: "https://inspirehep.net/authors/2868851"
+  style: solid
+  icon: fa-book
+- title: Google Scholar
+  url: "https://scholar.google.com/citations?user=fN9gP6AAAAAJ&hl=en"
+  style: brands
+  icon: fa-google
+- title: GitHub
+  url: "https://github.com/Dakshansh-Chawda"
+  style: brands
+  icon: fa-github
+- title: LinkedIn
+  url: "https://www.linkedin.com/in/dakshansh-chawda-641b95126/"
+  style: brands
+  icon: fa-linkedin
+- title: Medium
+  url: "https://medium.com/@dakshansh1201"
+  style: brands
+  icon: fa-medium

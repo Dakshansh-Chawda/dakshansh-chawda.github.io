@@ -1,0 +1,11 @@
+title: Dakshansh Chawda
+markdown: kramdown
+exclude:
+  - README.txt
+  - LICENSE.txt
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - assets/sass
+plugins:
+  - jekyll-redirect-from

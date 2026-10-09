@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ page.title }} | {{ site.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper"{% if page.home %} class="fade-in"{% endif %}>
+
+{% if page.home %}				<!-- Intro -->
+					<div id="intro">
+						<h1>Dakshansh Chawda</h1>
+						<p>Theoretical Particle Physics<br />
+							Machine Learning & Neural Networks</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+{% endif %}				<!-- Header -->
+					<header id="header">
+						{% if page.home %}<a href="about.html" class="logo">About Me</a>{% else %}<a href="index.html" class="logo">{{ site.title }}</a>{% endif %}
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							{% for item in site.data.nav %}{% assign here = page.url | remove_first: "/" %}{% if here == "" %}{% assign here = "index.html" %}{% endif %}<li class="{% if item.url == here %}active{% endif %}{% if item.two_line %} two-line{% endif %}"><a href="{{ item.url }}">{{ item.title | escape }}</a></li>
+							{% endfor %}
+						</ul>
+						<ul class="icons">
+							{% for s in site.data.social %}<li><a href="{{ s.url }}" class="icon {{ s.style }} {{ s.icon }}" title="{{ s.title }}"><span class="label">{{ s.title }}</span></a></li>
+							{% endfor %}
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+{{ content }}
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>University of Milano<br />
+								Department of Physics<br />
+								Milan, Italy</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:dakshansh.chawda@unimi.it">dakshansh.chawda@unimi.it</a></p>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Dakshansh Chawda 2024-2025</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
