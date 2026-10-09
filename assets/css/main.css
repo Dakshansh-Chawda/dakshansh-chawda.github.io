@@ -4687,3 +4687,20 @@ input, select, textarea {
 		}
 
 	}
+/* Nav: let the menu wrap onto a second row instead of clipping labels */
+
+	#nav {
+		height: auto;
+		min-height: 4rem;
+	}
+
+	#nav ul.links {
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#nav ul.links li a {
+		white-space: nowrap;
+	}

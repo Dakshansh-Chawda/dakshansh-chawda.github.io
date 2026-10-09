@@ -15,7 +15,8 @@
 			'opacity 1s ease'
 		));
 		background: rgba(255,255,255,0.175);
-		height: 4rem;
+		height: auto;
+		min-height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
@@ -30,6 +31,7 @@
 				@include vendor('display', 'flex');
 				@include vendor('flex-grow', '1');
 				@include vendor('flex-shrink', '1');
+				@include vendor('flex-wrap', 'wrap');
 				font-family: _font(family-heading);
 				font-weight: _font(weight-heading);
 				letter-spacing: 0.075em;
@@ -51,6 +53,7 @@
 						font-size: 0.8rem;
 						outline: none;
 						padding: 0 2rem;
+						white-space: nowrap;
 
 						&:hover {
 							color: inherit !important;
