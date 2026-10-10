@@ -19,3 +19,7 @@
   url: "https://medium.com/@dakshansh1201"
   style: brands
   icon: fa-medium
+- title: Goodreads
+  url: "https://www.goodreads.com/dakshreads"
+  style: brands
+  icon: fa-goodreads

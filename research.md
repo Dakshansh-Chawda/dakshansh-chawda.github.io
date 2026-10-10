@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Research"
-heading: "Research Focus & Interests"
+heading: "Research Project"
 label: "PhD Research"
 ---
 
@@ -9,6 +9,4 @@ label: "PhD Research"
 
 ## Flow-Oriented Perturbation Theory (FOPT)
 
-## NNPDF Collaboration
 
-## Methods & Tools

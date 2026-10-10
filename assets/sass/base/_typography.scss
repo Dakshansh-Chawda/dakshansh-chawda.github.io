@@ -211,3 +211,8 @@
 	}
 
 	@include color-typography;
+/* Boxes whose heading has {: .tight}: closer lines in the body text */
+
+	.posts > article:has(> header > h2.tight) p {
+		line-height: 1.75;
+	}

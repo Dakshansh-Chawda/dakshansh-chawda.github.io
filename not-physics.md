@@ -4,12 +4,14 @@ title: "Evidence I've a Life"
 label: "Not Physics"
 ---
 
-## The Bookshelf
+## The Bookshelf 
 
-## Latest on Medium
+## Writings
 
 [Read on Medium](https://medium.com/@dakshansh1201){: .button .small target="_blank"}
 
-## Goodreads
+## Readings
+
+[Goodreads](https://www.goodreads.com/dakshreads){: .button .small target="_blank"}
 
 ## Other Stuff
